@@ -6,11 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  color: #fff;
 }
 
 body {
   overflow-x: hidden;
   background-color: #181818 !important;
+  height: 200vh;
 }
 
 ul,
@@ -32,7 +34,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin: 0 !important;
 }
 
 button {
