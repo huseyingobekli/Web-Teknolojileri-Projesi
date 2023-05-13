@@ -48,7 +48,11 @@
   .about-text h3 {
     font-size: 28px;
   }
-  .about-text p {
+  .about-middle-wrapper h2 {
+    font-size: 32px !important;
+  }
+
+  .about-text-paragraf {
     font-size: 16px;
   }
   .about-start-buttons .about-start-button {
@@ -56,16 +60,23 @@
     margin-right: 20px;
     font-size: 16px;
   }
+  .about-middle-wrapper {
+    padding: 40px !important;
+  }
 }
 
 @media (max-width: 420px) {
   .about-text h1 {
     font-size: 38px;
   }
+  .about-middle-wrapper h2 {
+    font-size: 26px !important;
+  }
+
   .about-text h3 {
     font-size: 24px;
   }
-  .about-text p {
+  .about-text-paragraf {
     font-size: 14px;
   }
   .about-start-buttons .about-start-button {
@@ -90,7 +101,8 @@
   margin-bottom: 40px !important;
 }
 
-.about-middle-wrapper .about-text-paragraf::before {
+.about-middle-wrapper .about-text-paragraf::before,
+.hobby-text::before {
   content: "";
   position: absolute;
   top: 0;
@@ -103,4 +115,37 @@
 
 .about-middle-wrapper .about-text-paragraf:not(:last-child) {
   margin-bottom: 60px !important;
+}
+
+@media (max-width: 768px) {
+  .about-middle-wrapper {
+    margin-top: 50px;
+  }
+}
+
+.about-finish .about-hobies {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.about-hobies .about-hobby {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-hobby .hobby-text {
+  position: relative;
+  padding: 40px;
+  max-width: 600px;
+  flex: 1;
+}
+.about-hobby .hobby-text p {
+  font-size: 20px !important;
+}
+
+.about-hobby .hobby-img img {
+  width: 100%;
+  max-width: 400px;
 }
