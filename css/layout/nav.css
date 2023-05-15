@@ -4,10 +4,13 @@ nav .nav-wrapper {
   background-color: rgba(35, 37, 38, 0.8);
   width: 460px;
   height: 96px;
-  position: fixed;
+}
+nav {
+  position: sticky !important;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-wrapper .nav-list {

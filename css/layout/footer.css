@@ -1,0 +1,15 @@
+footer {
+  position: sticky;
+  background-color: rgba(35, 37, 38, 0.8);
+  height: 96px;
+}
+footer .maincontainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+footer .maincontainer h4 {
+  font-size: 16px;
+  font-weight: 300;
+}

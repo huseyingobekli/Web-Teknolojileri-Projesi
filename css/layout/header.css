@@ -1,6 +1,6 @@
 header {
   background-color: rgba(35, 37, 38, 0.8);
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -17,8 +17,14 @@ header .maincontainer {
   height: 100%;
 }
 
-.maincontainer .header-wrapper img {
-  height: 100%;
+.maincontainer .header-wrapper a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 3px 0px #898999;
 }
 
 @media (max-width: 420px) {
