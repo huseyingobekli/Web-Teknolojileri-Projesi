@@ -34,3 +34,12 @@
 .about-hobby-api-details a {
   color: inherit;
 }
+
+@media (max-width: 768px) {
+  .about-hobby-api {
+    padding: 0;
+  }
+  .about-hobby-api-img {
+    max-width: 100%;
+  }
+}

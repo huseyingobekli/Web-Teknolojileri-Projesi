@@ -1,0 +1,148 @@
+.city-details {
+  margin-top: 150px;
+}
+.city-details-wrapper {
+  padding: 60px;
+  position: relative;
+}
+.city-details-wrapper h2,
+.city-features-item-img h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 3px 0px #898999;
+}
+.city-features-item-img h2 {
+  padding-top: 20px;
+}
+.city-details-wrapper h4 {
+  padding: 15px;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 3px 0px #898999;
+}
+
+.city-details-wrapper .about-text-paragraf:not(:last-child) {
+  margin-bottom: 60px !important;
+}
+#carouselExample {
+  width: 1000px;
+  margin: 150px auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-size: 70% 70% !important;
+  background-color: rgba(0, 0, 0, 1);
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  border: none !important;
+}
+
+#w-100 {
+  width: 70% !important;
+  margin: auto !important;
+}
+
+.city-places .city-features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.city-features .city-features-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.city-features-item .city-features-item-text {
+  position: relative;
+  padding: 40px;
+  max-width: 600px;
+  flex: 1;
+}
+.city-features-item .city-features-item-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.city-features-item-img img {
+  padding: 40px;
+  width: 100%;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 30px 30px 30px 50px;
+  border-left: 16px solid rgba(14, 14, 14, 0.8);
+  background-color: rgba(14, 14, 14, 0.4);
+}
+.city-detals-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.city-detals-list {
+  font-size: 18px;
+  display: grid;
+  grid-gap: 45px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: outside;
+}
+
+.city-detals-list .city-detals-list-item p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .city-features-item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .city-detals-list {
+    font-size: 18px;
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: 1fr 1fr;
+  }
+  #w-100 {
+    width: 100% !important;
+    height: 380px !important;
+  }
+  #carouselExample {
+    margin: 100px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .city-details-wrapper {
+    padding: 10px 10px 10px 0;
+  }
+  #carouselExample {
+    margin: 60px auto;
+  }
+  .city-details {
+    margin-top: 100px;
+  }
+  #w-100 {
+    width: 100% !important;
+    height: 240px !important;
+  }
+}
