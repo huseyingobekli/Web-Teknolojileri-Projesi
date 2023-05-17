@@ -45,13 +45,22 @@ textarea {
   overflow: auto;
 }
 
+mark {
+  padding: 0 !important;
+  color: #000;
+  background-color: yellow !important;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
-textarea {
+textarea,
+select {
   outline: none;
-  border: 1px solid #dee0ea;
+  border: 1px solid #414345;
+  background-color: #414345;
+  color: #fff;
   padding: 8px 8px 8px 15px;
 }
 

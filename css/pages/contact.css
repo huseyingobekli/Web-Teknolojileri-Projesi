@@ -1,0 +1,100 @@
+.form-elements-test-area {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.formmain {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #181818;
+  padding: 30px 40px;
+}
+.formmain .formmain-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  column-gap: 20px;
+}
+
+.formmain .formmain-item span {
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex-basis: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.formmain-item select {
+  flex-basis: calc(100% - 105px);
+  outline: 0 !important;
+}
+.formmain-item select:active {
+  outline: 0px !important;
+}
+.form-elements-test-area .form-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.form-buttons .form-button {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #232526;
+  border: none;
+  padding: 15px 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all 0.8s ease-in;
+}
+
+.form-button:nth-child(1)::after {
+  width: 50%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.form-button:nth-child(1):hover::after {
+  opacity: 1;
+}
+
+.form-button:nth-child(2)::after {
+  width: 50%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.form-button:nth-child(2):hover::after {
+  opacity: 1;
+}
+.formmain-item.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.formmain-item.comment span {
+  flex-basis: 0;
+  margin-bottom: 10px;
+}
