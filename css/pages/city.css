@@ -6,7 +6,8 @@
   position: relative;
 }
 .city-details-wrapper h2,
-.city-features-item-img h2 {
+.city-features-item-img h2,
+.team-details-wrapper h2 {
   text-align: center;
   font-size: 48px;
   font-weight: 900;
@@ -84,7 +85,7 @@
 
 blockquote {
   margin: 20px 0;
-  padding: 30px 30px 30px 50px;
+  padding: 30px 20px 30px 50px;
   border-left: 16px solid rgba(14, 14, 14, 0.8);
   background-color: rgba(14, 14, 14, 0.4);
 }
@@ -104,7 +105,6 @@ blockquote {
 
 .city-detals-list .city-detals-list-item p {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
 }

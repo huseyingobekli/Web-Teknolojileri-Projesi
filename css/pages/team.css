@@ -1,0 +1,127 @@
+.footballer-wrapper .footballer-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.team-details-wrapper .team-tittle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 3px 0px #898999;
+}
+
+.footballer-list .footballer-list-item {
+  display: flex;
+  flex-direction: column;
+}
+.footballer-list .footballer-list-item blockquote {
+  padding: 20px 0px 20px 20px;
+  font-size: 16px;
+  height: 100%;
+}
+
+.footballer-list-item .footballer-img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footballer-list-item .footballer-img img {
+  width: 100%;
+}
+
+.team-details {
+  margin-top: 150px;
+}
+.team-details-wrapper {
+  padding: 60px;
+  position: relative;
+}
+.team-details-wrapper .about-text-paragraf:not(:last-child) {
+  margin-bottom: 60px !important;
+}
+
+.team-details-wrapper .team-informatiom {
+  display: flex;
+  align-items: center;
+  margin: 60px 0;
+}
+.team-informatiom .team-information-text {
+  flex-basis: 65%;
+  width: 100%;
+}
+.team-informatiom .team-information-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 35%;
+}
+
+.team-informatiom .team-information-images img {
+  width: 60%;
+}
+.team-information-text blockquote {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 30px 10px 30px 50px !important;
+}
+.team-information-text-item {
+  display: grid;
+  grid-gap: 12px !important;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.team-information-icons {
+  display: flex;
+}
+.team-information-icons img {
+  width: 40px;
+}
+.team-information-text-item-list {
+  display: flex;
+  column-gap: 20px !important;
+  width: 100%;
+}
+
+.team-information-text-item-list li {
+  display: flex;
+  align-items: center;
+}
+.team-information-text-item-list li a {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .team-informatiom {
+    flex-direction: column;
+  }
+  .footballer-wrapper .footballer-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .team-information-text blockquote {
+    padding: 30px 10px 30px 20px !important;
+  }
+  .team-information-text-item-list {
+    column-gap: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-details-wrapper {
+    padding: 10px;
+  }
+  .team-information-text-item {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .team-information-text-item-list li a {
+    flex-direction: column;
+  }
+  .team-information-icons img {
+    width: 60%;
+  }
+  .footballer-list .footballer-list-item blockquote {
+    font-size: 12px;
+  }
+}

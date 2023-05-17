@@ -128,7 +128,8 @@
 .hobby-text .about-text-paragraf::before,
 .about-hobby-api-img::before,
 .city-features-item::before,
-.city-details-wrapper .about-text-paragraf::before {
+.city-details-wrapper .about-text-paragraf::before,
+.team-details-wrapper .about-text-paragraf::before {
   content: "";
   position: absolute;
   top: 0;
