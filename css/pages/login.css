@@ -1,0 +1,125 @@
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overflow {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.login-section .maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.login-form-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgba(35, 37, 38, 0.8);
+  max-width: 1200px;
+}
+
+.login-form-main {
+  padding: 40px;
+  min-width: 550px;
+}
+.login-form-main .login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.login-form-img {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.login-form-img img {
+  width: 100%;
+}
+.login-form h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 3px 0px #898999;
+  margin-bottom: 40px !important;
+}
+
+.login-form p {
+  font-size: 28px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.login-form .login-form-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.login-form-item span {
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.login-form-item input {
+  flex-basis: 60%;
+}
+.login-form-item .show-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+}
+.login-form-item .show-password i {
+  cursor: pointer;
+}
+.login-form-item .show-password i:hover {
+  color: #000;
+}
+
+.login-form .form-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .login-form-wrapper {
+    flex-direction: column;
+  }
+  .login-form-img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-form-wrapper {
+    width: 100%;
+  }
+  .login-form-main {
+    min-width: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .login-form .form-button {
+    padding: 10px 20px;
+  }
+  .login-form-item input {
+    flex-basis: 80%;
+    width: 100%;
+  }
+}
