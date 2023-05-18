@@ -14,6 +14,10 @@
   transform: translateY(-50%);
   background-color: #181818;
   padding: 30px 40px;
+  transition: visibility 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.formmain.active {
+  visibility: hidden;
 }
 .formmain .formmain-item {
   display: flex;
@@ -37,9 +41,12 @@
   flex-basis: calc(100% - 105px);
   outline: 0 !important;
 }
-.formmain-item select:active {
-  outline: 0px !important;
+.comment textarea {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
 }
+
 .form-elements-test-area .form-buttons {
   display: flex;
   align-items: center;
@@ -59,7 +66,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  transition: all 0.8s ease-in;
 }
 
 .form-button:nth-child(1)::after {
@@ -97,4 +103,75 @@
 .formmain-item.comment span {
   flex-basis: 0;
   margin-bottom: 10px;
+}
+.formmain-item input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.formmain-item input[type="radio"]:checked {
+  background-color: #414345;
+}
+
+.on-off-button {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  z-index: 2;
+}
+.on-off-button input {
+  visibility: hidden;
+  position: absolute;
+}
+.on-off-button input:checked ~ .check::before {
+  transform: translateX(38px);
+}
+.on-off-button .check {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #414345;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.check::before {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 8px;
+  content: "";
+  transition: all 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  .formmain {
+    row-gap: 10px;
+    padding: 20px 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .formmain .formmain-item {
+    font-size: 14px;
+  }
+  .comment textarea {
+    min-height: 0px !important;
+    max-height: 80px !important;
+  }
+  .formmain-item select {
+    flex-basis: calc(100% - 120px);
+  }
+}
+@media (max-width: 420px) {
+  .on-off-button {
+    top: 80px;
+    right: 5px;
+  }
 }
