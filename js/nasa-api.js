@@ -8,13 +8,13 @@ async function showData() {
   );
   var data = await response.json();
 
-  const tittle = document.querySelector(".about-hobby-api-text-tittle");
+  const tittle = document.querySelector(".about-hobby-api-text-tittle.nasa");
   const paragraf = document.querySelector(
-    ".about-hobby-api-text .about-text-paragraf"
+    ".about-hobby-api-text .about-text-paragraf.nasa"
   );
-  const image = document.querySelector(".about-hobby-api-img");
-  const time = document.querySelector(".about-hobby-api-details-time");
-  const copyright = document.querySelector(".about-hobby-api-copyright");
+  const image = document.querySelector(".about-hobby-api-img.nasa");
+  const time = document.querySelector(".about-hobby-api-details-time.nasa");
+  const copyright = document.querySelector(".about-hobby-api-copyright.nasa");
 
   tittle.innerHTML = `
   ${data.title}
