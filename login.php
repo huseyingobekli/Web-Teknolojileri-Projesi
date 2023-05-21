@@ -72,13 +72,13 @@
     <nav>
       <div class="nav-wrapper">
         <ul class="nav-list">
-          <li class="nav-list-item active">
+          <li class="nav-list-item ">
             <a href="index.html">
               <i class="fa-solid fa-house"></i>
             </a>
           </li>
           <li class="nav-list-item">
-            <a href="#">
+            <a href="cv.html">
               <i class="fa-solid fa-id-card"></i>
             </a>
           </li>

@@ -128,6 +128,7 @@
 .hobby-text .about-text-paragraf::before,
 .about-hobby-api-img::before,
 .city-features-item::before,
+.contact-wrapper-item::before,
 .city-details-wrapper .about-text-paragraf::before,
 .team-details-wrapper .about-text-paragraf::before {
   content: "";

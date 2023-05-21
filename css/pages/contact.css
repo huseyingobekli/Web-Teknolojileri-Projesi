@@ -114,7 +114,66 @@
 .formmain-item input[type="radio"]:checked {
   background-color: #414345;
 }
+.formmain-item {
+  position: relative;
+}
 
+.form-name.active::after {
+  content: "İsim Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-surname.active::after {
+  content: "Soyisim Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-mail.active::after {
+  content: "Mail Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-mail.active2::after {
+  content: "Mail Adresi @ İçermelidir";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-age.active::after {
+  content: "Yaş Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-gender.active::after {
+  content: "Cinsiyet Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: -15px;
+  right: 5px;
+  font-size: 10px;
+  color: red;
+}
+.form-mesage.active::after {
+  content: "Mesaj Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: -15px;
+  right: 5px;
+  font-size: 10px;
+  color: red;
+}
 .on-off-button {
   position: absolute;
   top: 120px;

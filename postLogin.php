@@ -37,38 +37,29 @@
 
             <form action="postLogin.php" method="POST" class="login-form">
 
-
-                  
-  
-
                         <?php 
-
-				        include("userdata.php");
-
+				                     include("userdata.php");
                             if (($_POST["email"] == "g211210041@sakarya.edu.tr" || $_POST["email"] == $email) and ($_POST["password"] == "g211210041" || $_POST["password"] == $password))
                             {
                                 $_SESSION["email"] = $email;
-			                    $_SESSION["password"] = $password;
-                                echo ' <h3>Giriş Başarılı</h3>   ';   
-                                echo '<h4>Hoş Geldiniz "G211210041"</h4> '; 
-                                echo '<p><mark>3 Saniye İçinde Anasayfaya Yönlendirileceksiniz</mark></p>';    
-                                 //    header("Refresh: 5; url=index.html");
+                                echo ' <h3 class="postLogin-tittle">Giriş Başarılı </h3>   ';  
+                                echo "<p style='color:gray;'>" .   $_SESSION["email"] . "</p>";
+                                echo '<p>3 Saniye İçinde Anasayfaya Yönlendirileceksiniz</p>';    
+                                header("Refresh: 3; url=index.html");
                             }
                             else 
                             {
-                                    echo "Kullancı Adı veya Şifre Yanlış.<br>";
-                                    echo "!!!TEKRAR DENEYİN!!!";
-                                    // header("Refresh: 1; url=login.php");
+                              echo ' <h3 class="postLogin-tittle">Giriş Başarısız</h3>   ';   
+                              echo '<h4 class="postLogin-mini-tittle>Hoş Geldiniz "G211210041"</h4> '; 
+                              echo '<p>3 Saniye İçinde Giriş Sayfasına Yönlendirileceksiniz </p>';    
+                              header("Refresh: 3; url=login.php");
                             }
-                        
                         ?>
-
              </form>
             </div>
           </div>
       </div>
-          
-
+      
         <div class="about-canvas">
           <canvas id="canvas"></canvas>
         </div>

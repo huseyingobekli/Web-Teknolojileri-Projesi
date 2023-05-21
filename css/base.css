@@ -50,6 +50,9 @@ mark {
   color: #000;
   background-color: yellow !important;
 }
+figure {
+  margin: 0 !important;
+}
 
 input[type="text"],
 input[type="password"],

@@ -1,4 +1,4 @@
-const API_KEY = "8bbc971914msh660fd60ad641200p1123edjsndd1ad60440cc";
+const API_KEY = "c5fc038242msh62b720220cc6569p1dd9aajsn43446d3fc0d8";
 
 async function getImages() {
   let response = await fetch("https://free-epic-games.p.rapidapi.com/free", {

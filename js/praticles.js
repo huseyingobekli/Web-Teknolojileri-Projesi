@@ -12,10 +12,8 @@ canvas.height = viewport_height;
 function MaxCircless() {
   if (canvas.width < 600 || canvas.height < 600) {
     var MaxCircles = 75;
-    console.log(MaxCircles);
   } else {
     var MaxCircles = 175;
-    console.log(MaxCircles);
   }
   for (i = 1; i < MaxCircles; i++) {
     particles[i] = new Circles();

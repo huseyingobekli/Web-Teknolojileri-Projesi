@@ -1,0 +1,125 @@
+.cv-overflow {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.cv-wrapper {
+  max-height: 800px;
+  max-width: 1000px;
+  margin: 120px auto;
+  position: relative;
+}
+
+.cv-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(35, 37, 38, 0.8);
+  max-height: 240px;
+  padding: 15px 0;
+}
+.cv-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+  max-width: 320px;
+}
+.cv-header-tittle {
+  margin-left: 60px;
+  margin-right: auto;
+}
+
+.cv-img img {
+  max-height: 240px;
+  width: 70%;
+}
+
+.cv-header-tittle h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 3px 0px #898999;
+  margin-bottom: 5px !important;
+}
+
+.cv-header-tittle h4,
+.cv-main h3,
+.nav-item h4 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #414345;
+}
+
+.cv-main {
+  min-height: 70vh;
+  display: flex;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.cv-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../img/backgroundX.png);
+  z-index: -1;
+}
+
+.cv-main .cv-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 0 40px;
+  row-gap: 20px;
+  max-width: 320px;
+}
+
+.nav-item h4 {
+  font-size: 20px;
+}
+.cv-main h3 {
+  font-size: 30px;
+}
+
+.cv-main .article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  max-width: 450px;
+  margin-left: 60px;
+  padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .cv-img {
+    padding: 0;
+  }
+  .cv-img img {
+    width: 80%;
+  }
+  .cv-header-tittle h2 {
+    font-size: 32px;
+  }
+  .cv-header-tittle h4 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 576px) {
+  .cv-main {
+    flex-direction: column;
+  }
+  .cv-overflow {
+    overflow-y: auto;
+  }
+  .cv-main .cv-nav {
+    padding: 20px 0 10px 20px;
+  }
+  .cv-main .article {
+    margin-left: 0;
+    padding: 20px 0 10px 20px;
+  }
+}

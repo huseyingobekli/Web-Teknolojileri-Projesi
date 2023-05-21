@@ -28,7 +28,7 @@
 
     <div class="form-elements-test-area">
       <iframe
-        src="https://my.atlist.com/map/100bc3f8-042c-438f-a603-d4958c8bf3c9?share=true"
+        src="https://my.atlist.com/map/6bf6dd44-bb33-4823-8fcd-61d36ba59516?share=true"
         allow="geolocation 'self' https://my.atlist.com"
         width="100%"
         height="100%"
@@ -42,46 +42,54 @@
           <span class="check"></span>
         </label>
       </div>
+
       <div class="container">
-        <form class="formmain" action="">
-          <label class="formmain-item" for="isim">
+        <form
+          class="formmain"
+          action=""
+          id="contact-form"
+          onchange="formControl()"
+        >
+          <label class="formmain-item form-name" for="isim">
             <span>isim</span>
-            <input type="text" id="isim" />
+            <input type="text" id="isim" required />
           </label>
-          <label class="formmain-item" for="soyisim">
+          <label class="formmain-item form-surname" for="soyisim">
             <span>soyisim</span>
-            <input type="text" id="soyisim" />
+            <input type="text" id="soyisim" required />
           </label>
-          <label class="formmain-item" for="mail">
+          <label class="formmain-item form-mail" for="mail">
             <span>mail</span>
-            <input type="email" id="mail" />
+            <input type="email" id="mail" required />
           </label>
-          <label class="formmain-item" for="yas">
+          <label class="formmain-item form-age" for="yas">
             <span>Yasınız</span>
-            <select name="" id="yas">
-              <option value="0">Seçiniz</option>
-              <option value="1">0-14</option>
-              <option value="2">15-24</option>
-              <option value="3">25-40</option>
-              <option value="4">41-55</option>
-              <option value="5">56-70</option>
-              <option value="6">70+</option>
+            <select required name="" id="yas">
+              <option data="1" value="">Seçiniz</option>
+              <option data="2" value="">0-14</option>
+              <option data="3" value="">15-24</option>
+              <option data="4" value="">25-40</option>
+              <option data="5" value="">41-55</option>
+              <option data="6" value="">56-70</option>
+              <option data="7" value="">70+</option>
             </select>
           </label>
-          <label class="formmain-item" for="">
+          <label class="formmain-item form-gender" for="">
             <span>Cinsiyet</span>
             <label for="erkek">Erkek</label>
-            <input type="radio" id="erkek" name="gender" />
+            <input required type="radio" id="erkek" name="gender" />
             <label for="kadın">Kadın</label>
-            <input type="radio" id="kadın" name="gender" />
+            <input required type="radio" id="kadın" name="gender" />
           </label>
 
-          <label class="formmain-item comment" for="mesage">
+          <label class="formmain-item comment form-mesage" for="mesage">
             <span>Mesajınız</span>
-            <textarea name="" id="mesage"></textarea>
+            <textarea name="" id="mesage" required></textarea>
           </label>
           <div class="form-buttons">
-            <button class="form-button" type="submit">Gonder</button>
+            <button id="contact-form-submit-button" class="form-button">
+              Gonder
+            </button>
             <button class="form-button" type="reset">Sifirla</button>
           </div>
         </form>
@@ -89,13 +97,13 @@
       <nav>
         <div class="nav-wrapper">
           <ul class="nav-list">
-            <li class="nav-list-item active">
+            <li class="nav-list-item">
               <a href="index.html">
                 <i class="fa-solid fa-house"></i>
               </a>
             </li>
             <li class="nav-list-item">
-              <a href="#">
+              <a href="cv.html">
                 <i class="fa-solid fa-id-card"></i>
               </a>
             </li>
@@ -118,7 +126,6 @@
         </div>
       </nav>
     </div>
-
     <script src="js/contact.js"></script>
   </body>
 </html>
